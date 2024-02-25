@@ -1,0 +1,153 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #0c3478; /* Couleur de fond de l'en-tête */
+    color: #fff; /* Couleur du texte */
+    padding: 2px; /* Espacement intérieur de l'en-tête */
+}
+
+.container {
+    height: 8rem;
+    width: 80%; 
+    margin: 0 auto; 
+    display: flex; /* aligner les éléments */
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.logo {
+    width: 6rem;
+}
+
+nav ul {
+    list-style: none; /* Supprime les puces des listes */
+    padding: 0; /* Supprime les marges par défaut */
+    margin: 0; /* Supprime les marges par défaut */
+}
+
+nav ul li {
+    display: inline; /* Affiche les éléments de liste en ligne */
+    margin-right: 20px; /* Espacement entre les éléments de liste */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Supprime la marge à droite du dernier élément de liste */
+}
+
+nav ul li a {
+    text-decoration: none; /* Supprime la décoration des liens */
+    color: #fff; /* Couleur des liens */
+    transition: color 0.3s ease; /* Animation de transition */
+}
+
+nav ul li a:hover {
+    color: #809dc6; /* Couleur des liens au survol */
+}
+
+
+.presentation
+{
+    background: #ffffff;
+    margin: 0;
+    padding: 3rem 0 0 2rem;
+    display: flex;
+
+}
+
+span 
+{
+    color: #2727c9;
+    
+}
+
+.titre1 , .titre2
+{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    color: black;
+    
+}
+
+.presentationlogo
+{
+    width: 31rem;
+    margin: auto;
+    display: block;
+    border-radius: 13rem;
+}
+
+.titre1
+{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    color: black;
+    padding: 7% 0 0 5%;
+    font-size: 31px;
+}
+
+.avis {
+    display: flex;
+    background-color: #394cac;
+    height: 13rem;
+    padding-top: 7rem;
+}
+
+.rectangle {
+        width: 30%;
+        height: 100px;
+        background-color: #ffffff;
+        color: #000000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        font-size: 28px;
+        font-weight: bold;
+        border-radius: 25px;   
+        font-family: 'Poppins', sans-serif;
+        box-shadow: #2a4557 4px 1px 19px 7px;
+    
+    
+    
+}
+
+/* Style du compteur */
+#counter {
+    font-size: 24px;
+}
+
+/* Style de l'image de la dépanneuse */
+.depanneuse {
+    width: 30%;
+    height: auto;
+    display: block;
+    /* margin: 0 auto; */
+    position: relative;
+    animation: depanneuse-animation 5s linear infinite;
+}
+
+/* Animation de mouvement */
+@keyframes depanneuse-animation {
+    0% { left: 0; } /* Début de l'animation */
+    100% { left: calc(100% - 200px); } /* Fin de l'animation */
+}
+
+
+
+/* .titre{margin: 0;
+    height: 178px;
+    color: black;
+    text-align: center;
+    padding: 73px 0 0 0;
+}
+
+    .presentation {
+        background: #c8ccd7;
+        margin: 0;
+        display: flex;
+    }
+
+ */
