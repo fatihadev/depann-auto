@@ -48,69 +48,94 @@ nav ul li a:hover {
 }
 
 
-.presentation
+.home
 {
-    background: #ffffff;
-    margin: 0;
-    padding: 3rem 0 0 2rem;
+    background-image: url("../img/pneutransp.png");
     display: flex;
 
+    justify-content: space-around;
+    background-image: url("../img/pneutransp.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+
 }
 
-span 
+.home-content
 {
+    margin-top:11rem;
+}
+
+.home-img{
+    animation: drive 4s linear infinite;
+}
+
+@keyframes drive {
+    0% { transform: translateX(-50px) rotate(0deg); }
+    25% { transform: translateX(0px) rotate(5deg); }
+    50% { transform: translateX(50px) rotate(0deg); }
+    75% { transform: translateX(0px) rotate(-5deg); }
+    100% { transform: translateX(-50px) rotate(0deg); }
+  }
+  
+
+
+.contact-link
+{
+
+    margin-left: 5rem;
+    background-color: #262591;
+    border-radius: 16px;
+    padding: 11px;
+    color: white;
+    box-shadow: #636ca3 3px 2px 20px 10px;
+    text-decoration: none;
+}
+
+
+
+
+.titre1,
+.titre2 {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    margin-bottom: 2rem;
+    color: black;
+    font-weight: 900;
+    font-size: 37px;
+    margin-left: 5rem;
+}
+
+span {
     color: #2727c9;
-    
 }
 
-.titre1 , .titre2
-{
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    color: black;
-    
-}
 
-.presentationlogo
-{
-    width: 31rem;
-    margin: auto;
-    display: block;
-    border-radius: 13rem;
-}
-
-.titre1
-{
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    color: black;
-    padding: 7% 0 0 5%;
-    font-size: 31px;
-}
 
 .avis {
     display: flex;
     background-color: #394cac;
-    height: 13rem;
-    padding-top: 7rem;
+    height: 17rem;
+    padding-top: 3rem;
 }
 
 .rectangle {
-        width: 30%;
-        height: 100px;
-        background-color: #ffffff;
-        color: #000000;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 10px;
-        font-size: 28px;
-        font-weight: bold;
-        border-radius: 25px;   
-        font-family: 'Poppins', sans-serif;
-        box-shadow: #2a4557 4px 1px 19px 7px;
-    
-    
+    width: 22%;
+    height: 99px;
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 25px;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: #bac3c8 4px 1px 19px 7px;
+    border: solid #3535a8;
+    margin: auto;
     
 }
 
@@ -127,6 +152,7 @@ span
     /* margin: 0 auto; */
     position: relative;
     animation: depanneuse-animation 5s linear infinite;
+    margin-bottom: 4rem;
 }
 
 /* Animation de mouvement */
@@ -136,18 +162,70 @@ span
 }
 
 
-
-/* .titre{margin: 0;
-    height: 178px;
-    color: black;
-    text-align: center;
-    padding: 73px 0 0 0;
+.services {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-    .presentation {
-        background: #c8ccd7;
-        margin: 0;
+.service {
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+}
+
+.service img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.service h2 {
+    margin-top: 10px;
+    color: #333;
+}
+
+.service p {
+    color: #666;
+}
+
+    .avis {
         display: flex;
+        background-color: #394cac;
+        height: 20rem;
+        padding-top: 3rem;
+        justify-content: space-around;
     }
 
- */
+.avis-card {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: -1px 5px 20px 20px rgb(255 252 252 / 10%);
+}
+
+.avis-card img {
+    width: 45%;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+
+.avis-card h3 {
+    margin: 0px;
+    color: #ffffff;
+}
+
+.avis-card p {
+    color: #ffffff;
+}
+
